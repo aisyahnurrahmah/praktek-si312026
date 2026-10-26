@@ -1,0 +1,169 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+header{
+    background: steelblue;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    color: white;
+}
+
+nav{ 
+    background-color: black;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+}
+nav ul {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+nav li {
+    margin: 0;
+}
+nav a{
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+nav a:hover{
+    background: #4a90e2;
+}
+section{
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 7px;
+}
+/* halaman 2 */
+button{
+    padding:10px 20px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: [pointer];
+}
+button:hover{
+    background-color: #493104;
+}
+button:active{
+    background-color: crimson;
+}
+/* <!--halaman 3--!> */
+.hal2{
+    text-align: center;
+}
+.paragraf, .paragraf2, .paragraf3 {
+    font-weight: bold;
+}
+.paragraf::before{
+    content: "^";
+    color: #a8253b;
+    font-weight: bold;
+}
+.paragraf2::after{
+    color: #a8253b;
+    content: "^";
+    font-weight: bold;
+}
+.paragraf3::first-letter{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+/* <!--halaman 4--!> */
+.hal4{
+    text-align: center;
+}
+.container{
+    display: flex;
+    margin-top: 0px;
+}
+.kotak1{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    position: relative;
+    animation: gerakkanan 5s infinite ease-in-out;
+}
+.kotak2{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    background: tomato;
+    animation: gantiwarna 5s infinite linear;
+}
+        
+ @keyframes gerakkanan{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    0%{
+        transform: translateX(0);
+    }
+}
+@keyframes gantiwarna{
+    0%{
+        background: blue;
+    }
+    25%{
+        background: #202042;
+    }
+    50%{
+        background: #cc6cc4;
+    }
+    75%{
+        background: #1c1c3b;
+    }
+    100%{
+        background: #38385a;
+    }
+}
+.kotak3{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    background: paleturquoise;
+    animation: putar 5s infinite linear;
+}
+.kolom2{
+ position: relative;
+ padding-right: 60px;
+ margin-left: auto;
+}
+@keyframes putar{
+    from{
+    transform: rotate(0deg);
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
